@@ -1,12 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyVersion>5.0.0</AssemblyVersion>
+    <FileVersion>5.0.0</FileVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>Atlantis.Net.Irc</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>5.0.0-alpha</Version>
+    <Authors>Zack Loveless</Authors>
+    <Company>Zack Loveless</Company>
+    <Product>Atlantis.Net.Irc</Product>
+    <Description>A completely contained, simple IRC library for intenracting with chat rooms online with full support for dependency injection, logging, and configuration.</Description>
+    <Copyright>Copyright 2014-2019 Zack Loveless.</Copyright>
+    <PackageProjectUrl>https://github.com/zloveless/Atlantis.Net.Irc</PackageProjectUrl>
+    <PackageTags>IRC</PackageTags>
+    <RepositoryUrl>https://github.com/zloveless/Atlantis.Net.Irc.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
-
 </Project>
